@@ -40,8 +40,22 @@ const Register = () => {
     }
   };
 
+
+
   return (
-    <div className="bg-gray-800 flex items-center justify-center min-h-screen w-full p-4">
+    <div 
+     
+      style={{
+        userSelect: "none", 
+        WebkitUserSelect: "none",
+        MozUserSelect: "none",
+        msUserSelect: "none",
+      }}
+      onMouseDown={(e) => e.preventDefault()}
+
+
+
+      className="bg-gray-800 flex items-center justify-center min-h-screen w-full p-4">
       <div className="flex bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl w-full">
         <div className="w-full md:w-1/2 p-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-6">Register Now!</h2>
